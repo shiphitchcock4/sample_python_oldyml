@@ -9,9 +9,9 @@ python:
   - 3.3
   - 3.4
   - pypy
-  - pyyyy
 
-install:
+
+install::
   - pip install -r requirements.txt
 
 # Make folders for the reports
@@ -19,7 +19,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
-script:
+script::
   - which python
   - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage xml -o shippable/codecoverage/coverage.xml
