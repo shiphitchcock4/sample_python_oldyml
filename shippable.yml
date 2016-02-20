@@ -1,15 +1,15 @@
-#language: python
+language: python
 #build_image: shippableimages/ubuntu1204_python
 #node_js:
  # - 0.12
-#python:
- # - 2.6
-  #- 2.7
-  #- 3.2
-  #- 3.3
-  #- 3.4
-  #- pypy
-  #- pyyyy
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - pypy
+  - pyyyy
 
 install:
   - pip install -r requirements.txt
