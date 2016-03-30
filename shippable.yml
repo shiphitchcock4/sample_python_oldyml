@@ -14,11 +14,11 @@ build:
   - coverage xml -o shippable/codecoverage/coverage.xml
 integrations:
   notifications:
-     integrationName: email
-     type: email
-     recipients:
-      - revathi@shippable.com
-     on_success: always
+    - integrationName: email
+      type: email
+      recipients:
+        - revathi@shippable.com
+      on_success: always
 #install:
  # - pip install -r requirements.txt
 
