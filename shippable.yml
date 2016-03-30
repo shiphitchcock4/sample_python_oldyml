@@ -12,7 +12,11 @@ build:
   - which python
   - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage xml -o shippable/codecoverage/coverage.xml
-  
+integrations:
+  notifications:
+     recipients:
+      - revathi@shippable.com
+     on_success: always
 #install:
  # - pip install -r requirements.txt
 
